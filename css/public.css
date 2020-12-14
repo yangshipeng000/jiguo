@@ -41,7 +41,7 @@ header {
 }
 
 .icon {
-    width: 1200px;
+    width: 1000px;
     margin: 0 auto;
 }
 
@@ -93,11 +93,12 @@ header {
 
 footer {
     width: 100%;
+    padding: 20px 0;
     background-color: #555;
 }
 
 .footer_mes {
-    width: 1200px;
+    width: 1000px;
     height: 300px;
     margin: 0 auto;
 }
@@ -105,7 +106,7 @@ footer {
 .footer_mes div {
     float: left;
     height: 200px;
-    margin: 10px 20px;
+    padding: 10px 10px;
     color: white;
 }
 
