@@ -31,7 +31,7 @@
 
 #banner .sq .right {
     position: absolute;
-    top: 0px;
+    top: 60px;
     right: 0px;
     width: 310px;
     text-align: right;
@@ -87,34 +87,6 @@
     margin-top: 10px;
     border-radius: 5px;
     font-weight: bolder;
-}
-
-.reports_select {
-    width: 1200px;
-    font-size: 15px;
-    margin: 0 auto;
-}
-
-.reports_select ul li {
-    width: 250px;
-    padding: 10px 20px;
-    background-color: white;
-}
-
-.reports_select img {
-    width: 300px;
-    border-radius: 8px;
-}
-
-.reports_pl {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-}
-
-.reports_pl img {
-    width: 20px;
-    height: 20px;
 }
 
 
@@ -244,3 +216,121 @@
 
 
 /* 报告精选 */
+
+.reports_select {
+    width: 1200px;
+    font-size: 13px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.reports_select ul li {
+    width: 250px;
+    height: 270px;
+    margin-left: 28px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    vertical-align: top;
+    background-color: white;
+}
+
+.reports_select img {
+    width: 250px;
+    border-radius: 8px 8px 0 0;
+}
+
+.reports_select .reports_t {
+    display: inline-block;
+    width: 225px;
+    margin: 0 auto;
+    padding: 0px 10px;
+    line-height: 0.5em;
+    line-height: 30px;
+}
+
+.reports_pl {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    float: right;
+}
+
+ul li .reports_pl img {
+    width: 20px;
+    height: 20px;
+    vertical-align: auto;
+}
+
+.r_s1 {
+    padding: 15px 10px;
+    height: 30px;
+    color: #CCCCCC;
+}
+
+h4 {
+    padding: 10px 25px;
+    font-size: 18px;
+}
+
+
+/* 精选导购 */
+
+.guide {
+    width: 1200px;
+    font-size: 13px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #FFFFFF;
+}
+
+.guide ul li {
+    width: 250px;
+    height: 270px;
+    margin-left: 28px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    vertical-align: top;
+    background-color: white;
+}
+
+.guide img {
+    width: 250px;
+    border-radius: 8px 8px 0 0;
+}
+
+
+/* 酷玩 */
+
+.coldplay {
+    width: 1200px;
+    font-size: 13px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.coldplay ul li {
+    width: 250px;
+    height: 270px;
+    margin-left: 28px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    vertical-align: top;
+    background-color: white;
+}
+
+.coldplay img {
+    width: 250px;
+    border-radius: 8px 8px 0 0;
+}
+
+.jz {
+    font-size: 18px;
+    width: 120px;
+    padding: 50px 0;
+    color: orangered;
+    margin: 0 auto;
+    cursor: pointer;
+}

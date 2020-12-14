@@ -236,7 +236,29 @@
         </div>
 
     </div>
+    <!-- 报告精选 -->
+    <div class="reports_select">
+        <h4>报告精选</h4>
+        <ul>
 
+        </ul>
+    </div>
+    <!-- 精选导购 -->
+    <div class="guide">
+        <h4>精选导购</h4>
+        <ul>
+
+        </ul>
+    </div>
+    <!-- 发现酷玩 -->
+    <div class="coldplay">
+        <h4>发现酷玩</h4>
+        <ul>
+
+        </ul>
+    </div>
+    <div class="jz">点击加载更多</div>
+    </div>
     <!-- 底部 -->
     <footer>
         <div class="footer_mes">
@@ -297,8 +319,44 @@
         </div>
     </footer>
 </body>
+<script src="js/jquery-3.5.1.min.js"></script>
 <script src="./js/swiper-bundle.js"></script>
 <script src="./js/index.js"></script>
+<script>
+    var a = document.querySelector('.reports_select ul')
+    var guide = document.querySelector(".guide ul");
+    var coldplay = document.querySelector(".coldplay ul");
+    $.ajax({
+        url: "http://192.168.1.94:3000/play/new",
+        type: 'GET',
+        dataType: 'json',
+        success: function(data) {
+            console.log(data)
+            for (var i = 0; i < 1; i++) {
+                for (var n = 0; n < 8; n++) {
+                    a.innerHTML += '<li>' + '<img src =' + data[i][n].img + '>' + '<span class="reports_t">' + data[i][n].text +
+                        '</span>' + '<div class="r_s1">' +
+                        '<span>● 苏苏</span>' +
+                        '<span class="reports_pl"><img src="./img/reply.png">' + data[i][n].like + '</span>' +
+                        '<span class="reports_pl"><img src="./img/use5.png">' + data[i][n].words + '</span>' +
+                        '</div>' + '</li>';
+                    guide.innerHTML += '<li>' + '<img src =' + data[i][n].img + '>' + '<span class="reports_t">' + data[i][n].text +
+                        '</span>' + '<div class="r_s1">' +
+                        '<span>● 苏苏</span>' +
+                        '<span class="reports_pl"><img src="./img/reply.png">' + data[i][n].like + '</span>' +
+                        '<span class="reports_pl"><img src="./img/use5.png">' + data[i][n].words + '</span>' +
+                        '</div>' + '</li>';
+                    coldplay.innerHTML += '<li>' + '<img src =' + data[i][n].img + '>' + '<span class="reports_t">' + data[i][n].text +
+                        '</span>' + '<div class="r_s1">' +
+                        '<span>● 苏苏</span>' +
+                        '<span class="reports_pl"><img src="./img/reply.png">' + data[i][n].like + '</span>' +
+                        '<span class="reports_pl"><img src="./img/use5.png">' + data[i][n].words + '</span>' +
+                        '</div>' + '</li>';
+                }
 
+            }
+        }
+    });
+</script>
 
 </html>
