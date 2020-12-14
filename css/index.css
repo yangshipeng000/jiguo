@@ -6,6 +6,7 @@
 /* 顶部大图 */
 
 #banner {
+    position: relative;
     width: 100%;
     height: 300px;
     background: url(images/original.jpg) no-repeat;
@@ -13,19 +14,26 @@
 }
 
 #banner .sq {
-    position: relative;
-    width: 1920px;
-    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 1000px;
     margin: 0 auto;
-    background: url(../img/original.jpg);
+}
+
+#banner .Img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 #banner .sq .right {
     position: absolute;
-    top: 60px;
-    right: 460px;
+    top: 0px;
+    right: 0px;
     width: 310px;
-    height: 240px;
     text-align: right;
     animation: zhuan .5s linear both;
 }
@@ -108,6 +116,9 @@
     width: 20px;
     height: 20px;
 }
+
+
+/* 热门试用 */
 
 .hot_box {
     width: 100%;
@@ -230,3 +241,6 @@
     background: #FFFFD6;
     color: goldenrod;
 }
+
+
+/* 报告精选 */
