@@ -26,8 +26,8 @@
         <h1>体验报告</h1>
         <div class="middle">
             <ul>
-                <li>最新</li>
-                <li>最热</li>
+                <li class="newest">最新</li>
+                <li class="hotest">最热</li>
             </ul>
             <div class="content">
                 <div class="div1">
@@ -163,5 +163,11 @@
 
     </div>
 </body>
+<script>
+    var hotest = document.querySelector(".hotest");
+    hotest.onclick = function() {
+        window.location.href = "./report2.html";
+    }
+</script>
 
 </html>
