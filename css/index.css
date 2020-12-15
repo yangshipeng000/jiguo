@@ -1,4 +1,6 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -217,42 +219,55 @@
 
 /* 报告精选 */
 
-.reports_select {
+.reports_select,
+.guide,
+.coldplay {
     width: 1200px;
-    font-size: 13px;
+    font-size: 15px;
     margin: 0 auto;
+    padding: 20px;
     margin-top: 20px;
 }
 
-.reports_select ul li {
+.guide ul {
+    width: 1200px;
+}
+
+.reports_select ul li,
+.guide ul li,
+.coldplay ul li {
+    position: relative;
     width: 250px;
     height: 270px;
-    margin-left: 28px;
+    margin-left: 20px;
     margin-right: 20px;
     margin-top: 20px;
     border-radius: 8px;
+    border: 1px solid #dfdfdf;
     vertical-align: top;
     background-color: white;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .reports_select img {
-    width: 250px;
-    border-radius: 8px 8px 0 0;
+    width: 100%;
+    /* border-radius: 8px 8px 0 0; */
 }
 
-.reports_select .reports_t {
+.reports_t {
     display: inline-block;
-    width: 225px;
+    width: 100%;
     margin: 0 auto;
     padding: 0px 10px;
-    line-height: 0.5em;
-    line-height: 30px;
+    line-height: 1.5em;
 }
 
 .reports_pl {
     display: inline-block;
-    width: 30px;
+    width: 35px;
     height: 20px;
+    padding-right: 3px;
     float: right;
 }
 
@@ -263,8 +278,10 @@ ul li .reports_pl img {
 }
 
 .r_s1 {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
     padding: 15px 10px;
-    height: 30px;
     color: #CCCCCC;
 }
 
@@ -276,15 +293,18 @@ h4 {
 
 /* 精选导购 */
 
-.guide {
+
+/* .guide {
     width: 1200px;
     font-size: 13px;
     margin: 0 auto;
     margin-top: 20px;
     background-color: #FFFFFF;
-}
+} */
 
-.guide ul li {
+
+/* .guide ul li {
+    position: relative;
     width: 250px;
     height: 270px;
     margin-left: 28px;
@@ -293,24 +313,47 @@ h4 {
     border-radius: 8px;
     vertical-align: top;
     background-color: white;
+} */
+
+.Guide {
+    /* width: 100%; */
+    padding: 5px 0 35px;
+    margin: 20px 0;
+    background: #fff;
+}
+
+.Guide .guide ul li {
+    /* padding-bottom: 15px; */
+    margin-left: 18px;
+    margin-right: 18px;
+    overflow: visible;
 }
 
 .guide img {
-    width: 250px;
+    width: 248px;
     border-radius: 8px 8px 0 0;
+}
+
+.guide .bottomImg {
+    width: 250px;
+    position: absolute;
+    bottom: -11.5px;
+    left: -1.5px;
 }
 
 
 /* 酷玩 */
 
-.coldplay {
+
+/* .coldplay {
     width: 1200px;
-    font-size: 13px;
+    font-size: 14px;
     margin: 0 auto;
     margin-top: 20px;
-}
+} */
 
-.coldplay ul li {
+
+/* .coldplay ul li {
     width: 250px;
     height: 270px;
     margin-left: 28px;
@@ -319,18 +362,26 @@ h4 {
     border-radius: 8px;
     vertical-align: top;
     background-color: white;
-}
+} */
 
 .coldplay img {
     width: 250px;
     border-radius: 8px 8px 0 0;
 }
 
+.coldplay .r_s1 span:first-child {
+    color: tomato;
+}
+
 .jz {
     font-size: 18px;
-    width: 120px;
+    width: 140px;
     padding: 50px 0;
     color: orangered;
     margin: 0 auto;
     cursor: pointer;
+}
+
+.jz img {
+    width: 20px;
 }
