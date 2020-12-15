@@ -244,12 +244,45 @@
         </ul>
     </div>
     <!-- 精选导购 -->
-    <div class="guide">
-        <h4>精选导购</h4>
-        <ul>
-
-        </ul>
+    <div class="Guide">
+        <div class="guide">
+            <h4>精选导购</h4>
+            <ul>
+                <li>
+                    <img src='./img/g1.jpg '><span class="reports_t">花万元把蜗居秒变“豪宅”？这12件家具就能帮你办到</span>
+                    <div class="r_s1">
+                        <span class="reports_pl"><img src="./img/reply.png">3</span>
+                        <span class="reports_pl"><img src="./img/use5.png">3</span>
+                    </div>
+                    <img class="bottomImg" src="./img/listbg.jpg" alt="">
+                </li>
+                <li>
+                    <img src='./img/g2.jpg '><span class="reports_t">到底有没有完美的iPhone手机配件，答案都在这里</span>
+                    <div class="r_s1">
+                        <span class="reports_pl"><img src="./img/reply.png">3</span>
+                        <span class="reports_pl"><img src="./img/use5.png">3</span>
+                    </div>
+                    <img class="bottomImg" src="./img/listbg.jpg" alt=""></li>
+                <li>
+                    <img src='./img/g3.jpg '><span class="reports_t">2016，这8支钢笔够你装逼一整年</span>
+                    <div class="r_s1">
+                        <span class="reports_pl"><img src="./img/reply.png">3</span>
+                        <span class="reports_pl"><img src="./img/use5.png">3</span>
+                    </div>
+                    <img class="bottomImg" src="./img/listbg.jpg" alt="">
+                </li>
+                <li>
+                    <img src='./img/g4.jpg '><span class="reports_t">他用12年找一把完美 剃须刀，给你2万字终极购买指南</span>
+                    <div class="r_s1">
+                        <span class="reports_pl"><img src="./img/reply.png">3</span>
+                        <span class="reports_pl"><img src="./img/use5.png">3</span>
+                    </div>
+                    <img class="bottomImg" src="./img/listbg.jpg" alt="">
+                </li>
+            </ul>
+        </div>
     </div>
+
     <!-- 发现酷玩 -->
     <div class="coldplay">
         <h4>发现酷玩</h4>
@@ -257,7 +290,7 @@
 
         </ul>
     </div>
-    <div class="jz">点击加载更多</div>
+    <div class="jz"><img src="./img/more.png" alt=""> 点击加载更多</div>
     </div>
     <!-- 底部 -->
     <footer>
@@ -326,37 +359,74 @@
     var a = document.querySelector('.reports_select ul')
     var guide = document.querySelector(".guide ul");
     var coldplay = document.querySelector(".coldplay ul");
+    var JZ = document.querySelector(".jz");
     $.ajax({
         url: "http://192.168.1.94:3000/play/new",
         type: 'GET',
         dataType: 'json',
         success: function(data) {
-            console.log(data)
-            for (var i = 0; i < 1; i++) {
-                for (var n = 0; n < 8; n++) {
+            // console.log(data)
+            for (var i = 0; i < 2; i++) {
+                for (var n = 0; n < 4; n++) {
                     a.innerHTML += '<li>' + '<img src =' + data[i][n].img + '>' + '<span class="reports_t">' + data[i][n].text +
                         '</span>' + '<div class="r_s1">' +
                         '<span>● 苏苏</span>' +
                         '<span class="reports_pl"><img src="./img/reply.png">' + data[i][n].like + '</span>' +
                         '<span class="reports_pl"><img src="./img/use5.png">' + data[i][n].words + '</span>' +
                         '</div>' + '</li>';
-                    guide.innerHTML += '<li>' + '<img src =' + data[i][n].img + '>' + '<span class="reports_t">' + data[i][n].text +
-                        '</span>' + '<div class="r_s1">' +
-                        '<span>● 苏苏</span>' +
-                        '<span class="reports_pl"><img src="./img/reply.png">' + data[i][n].like + '</span>' +
-                        '<span class="reports_pl"><img src="./img/use5.png">' + data[i][n].words + '</span>' +
-                        '</div>' + '</li>';
-                    coldplay.innerHTML += '<li>' + '<img src =' + data[i][n].img + '>' + '<span class="reports_t">' + data[i][n].text +
-                        '</span>' + '<div class="r_s1">' +
-                        '<span>● 苏苏</span>' +
-                        '<span class="reports_pl"><img src="./img/reply.png">' + data[i][n].like + '</span>' +
-                        '<span class="reports_pl"><img src="./img/use5.png">' + data[i][n].words + '</span>' +
-                        '</div>' + '</li>';
+                    if (n == 2) {
+                        coldplay.innerHTML += '<li>' + '<img src =' + data[i][n].img + '>' + '<span class="reports_t">' + data[i][n].text +
+                            '</span>' + '<div class="r_s1">' +
+                            '<span>￥暂无</span>' +
+                            '<span class="reports_pl"><img src="./img/reply.png">' + data[i][n].like + '</span>' +
+                            '<span class="reports_pl"><img src="./img/use5.png">' + data[i][n].words + '</span>' +
+                            '</div>' + '</li>'
+                    } else {
+                        coldplay.innerHTML += '<li>' + '<img src =' + data[i][n].img + '>' + '<span class="reports_t">' + data[i][n].text +
+                            '</span>' + '<div class="r_s1">' +
+                            '<span>' + data[n][i].price + '</span>' +
+                            '<span class="reports_pl"><img src="./img/reply.png">' + data[i][n].like + '</span>' +
+                            '<span class="reports_pl"><img src="./img/use5.png">' + data[i][n].words + '</span>' +
+                            '</div>' + '</li>';
+                    }
                 }
-
             }
         }
     });
+
+    $('.jz').click(function() {
+        JZ.innerHTML = '<img src="./img/loading-icon.gif" alt=""> 加载中请稍后'
+        setTimeout(function() {
+            $.ajax({
+                url: "http://192.168.1.94:3000/play/new",
+                type: 'GET',
+                dataType: 'json',
+                success: function(data) {
+                    // console.log(data)
+                    for (var i = 0; i < 2; i++) {
+                        for (var n = 0; n < 4; n++) {
+                            if (n == 2) {
+                                coldplay.innerHTML += '<li>' + '<img src =' + data[i][n].img + '>' + '<span class="reports_t">' + data[i][n].text +
+                                    '</span>' + '<div class="r_s1">' +
+                                    '<span>￥暂无</span>' +
+                                    '<span class="reports_pl"><img src="./img/reply.png">' + data[i][n].like + '</span>' +
+                                    '<span class="reports_pl"><img src="./img/use5.png">' + data[i][n].words + '</span>' +
+                                    '</div>' + '</li>'
+                            } else {
+                                coldplay.innerHTML += '<li>' + '<img src =' + data[i][n].img + '>' + '<span class="reports_t">' + data[i][n].text +
+                                    '</span>' + '<div class="r_s1">' +
+                                    '<span>' + data[n][i].price + '</span>' +
+                                    '<span class="reports_pl"><img src="./img/reply.png">' + data[i][n].like + '</span>' +
+                                    '<span class="reports_pl"><img src="./img/use5.png">' + data[i][n].words + '</span>' +
+                                    '</div>' + '</li>';
+                            }
+                        }
+                    }
+                }
+            });
+            JZ.innerHTML = '<img src="./img/more.png" alt=""> 点击加载更多'
+        }, 2000)
+    })
 </script>
 
 </html>
