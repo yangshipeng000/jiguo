@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+body{
+  background-color: rgb(231, 227, 227);
+}
+.box {
+  position: relative;
+  width: 1400px;
+}
+
+.header {
+  width: 1400px;
+  height: 75px;
+  border-bottom: 1px solid gray;
+  background-color: white;
+}
+
+#title {
+  position: absolute;
+  height: 75px;
+  top: 10px;
+  left: 400px;
+}
+
+.logo img {
+  margin-left: 200px;
+  margin-top: 10px;
+  height: 50px;
+}
+
+#title li {
+  float: left;
+  width: 100px;
+  height: 75px;
+  line-height: 50px;
+  color: black;
+}
+
+#title li:hover {
+  color: red;
+}
+
+.search {
+  position: absolute;
+  top: 25px;
+  right: 290px;
+}
+
+.header span {
+  position: absolute;
+  top: 20px;
+  right: 210px;
+  padding: 5px 8px;
+  font-size: 16px;
+  border: 1px solid red;
+  color: red;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.middle{
+  position: relative;
+  margin: 25px auto;
+  width: 1000px;
+  height: 790px;
+  border:1px solid gray;
+  border-radius: 10px;
+  background-color: white;
+  h3{
+    margin-top: 15px;
+  }
+}
+.join{
+  position: absolute;
+  top: 120px;
+  left: 300px;
+  width: 405px;
+  height: 520px;
+  input{
+    margin-bottom: 28px;
+    font-size: 16px;
+    color: gray;
+    border: lightgrey;
+    outline-style: none;
+    background-color: lightgrey;
+  }
+  #inp1,#inp4,#inp5,#inp6,#inp7{
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    }
+    #inp2,#inp3{
+      width: 245px;
+      height: 50px;
+      border-radius: 10px;
+    }
+    img{
+      position: absolute;
+      top: 80px;
+      right: 10px;
+    }
+    span{
+      position: absolute;
+      top: 155px;
+      right: 10px;
+      padding:15px 20px;
+      color: gray;
+      border: 1px solid gray;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    #inp7{
+      color: white;
+      background-color: red;
+      cursor: pointer;
+    }
+}
+.footer{
+  position: absolute;
+  width: 1400px;
+  height: 360px;
+  border: 1px solid black;
+  background-color: rgb(83, 80, 80);
+  .footer-left{
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 200px;
+    width: 330px;
+    #logo{
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    span:first-of-type{
+      display: inline-block;
+      position: absolute;
+      top: 80px;
+      right: 0;
+      width: 130px;
+      color: rgb(163, 162, 162);
+      font-size: 10px;
+    }
+    span:last-of-type{
+      display: inline-block;
+      position: absolute;
+      top: 140px;
+      right: 0;
+      width: 130px;
+      color: rgb(163, 162, 162);
+      font-size: 10px;
+    }
+  }
+  .footer-right{
+    position: absolute;
+    top: 40px;
+    left: 570px;
+    width: 650px;
+    height: 260px;
+    li{
+      font-size: 14px;
+      height: 22px;
+      color: rgb(163, 162, 162);
+      cursor: pointer;
+    }
+    li:hover{
+      color: orange;
+    }
+    h4{
+      color: white;
+      cursor: pointer;
+    }
+    h4:hover{
+      color: red;
+    }
+    .div2{
+      position: absolute;
+      top: 0;
+      left: 120px;
+      #ul-left{
+        position: absolute;
+        top: 40px;
+        left: 0;
+      }
+      #ul-right{
+        position: absolute;
+        top: 40px;
+        left: 75px;
+        width: 70px;
+      }
+    }
+    .div3{
+      position: absolute;
+      top: 0;
+      left: 280px;
+    }
+    .div4{
+      position: absolute;
+      top: 0;
+      left: 460px;
+    }
+  }
+  .weibu{
+    position: absolute;
+    width: 1400px;
+    bottom: 10px;
+    font-size: 14px;
+    color: rgb(163, 162, 162);
+    text-align: center;
+  }
+}
