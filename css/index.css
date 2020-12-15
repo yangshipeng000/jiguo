@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+ul li {
+    display: inline-block;
+    list-style: none;
+}
+
 
 /* 顶部大图 */
 

@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+ul li {
+    display: inline-block;
+}
+
 .box {
     width: 100%;
     border-top: 1px solid #d0d0d0;
