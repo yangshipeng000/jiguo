@@ -12,8 +12,14 @@ body {
     background: #efefef;
 }
 
-ul,
-li {
+header ul,
+footer li {
+    display: inline-block;
+    list-style: none;
+}
+
+footer ul,
+footer li {
     display: inline-block;
     list-style: none;
 }
