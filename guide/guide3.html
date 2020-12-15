@@ -6,6 +6,16 @@
     <title>2016，这8支钢笔够你装逼一整年</title>
     <link rel="stylesheet" type="text/css" href="../css/public.css" />
     <link rel="stylesheet" type="text/css" href="../css/guide3.css" />
+    <link rel="stylesheet" href="../dist/css/share.min.css">
+    <style type="text/css">
+        #share-2 {
+            position: absolute;
+            /* z-index: 100; */
+            top: 120px;
+            left: 90px;
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -19,7 +29,7 @@
                     <a href="#"> 酷玩</a>
                 </li>
                 <li><a href="#">导购</a></li>
-                <li><a href="#">使用</a></li>
+                <li><a href="#">试用</a></li>
                 <li><a href="#">报告</a></li>
             </ul>
             <div class="surch">
@@ -91,7 +101,9 @@
                 <div>喜欢<span>15</span></div>
             </div>
             <div class="fenx"><img src="../img/share_yj1.png" alt="">
-                <div><span>分享</span></div>
+                <div><span>分享</span>
+                    <div id="share-2"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -157,25 +169,41 @@
     </footer>
 </body>
 <script src="../js/jquery.min.js"></script>
+<script src="http://apps.bdimg.com/libs/jquery/1.8.2/jquery.js"></script>
+<script src="../dist/js/jquery.share.min.js"></script>
 <script>
-    flag = true
+    var t = 1
+    flagl = true
+    flagf = true
     $('.like img').click(function() {
-        if (flag) {
+        if (flagl) {
             $(this).attr('src', '../img/xinRedh.png')
             $('.like span').text('16').css('color', '#FE5341')
-            flag = false
+            flagl = false
         } else {
             $(this).attr('src', '../img/xinRedo.png')
             $('.like span').text('15').css('color', '#afafaf')
-            flag = true
+            flagl = true
         }
     })
     $('.fenx img').click(function() {
-        if (flag) {
+        if (t == 2) {
             $(this).attr('src', '../img/shareh_yj1.png')
             $('.fenx span').text('已分享').css('color', '#FE5341')
-            flag = false
+                // flagf = false
         }
+        t++
+    });
+    // 分享
+    $('#share-1').share();
+    $('#share-2').share({
+        sites: ['qzone', 'qq', 'weibo', 'wechat']
+    });
+    $('#share-3').share();
+    $('#share-4').share();
+    $('.fenx img').click(function() {
+        console.log(123)
+        $("#share-2").slideToggle()
     })
 </script>
 

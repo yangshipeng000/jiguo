@@ -57,7 +57,9 @@
             margin: 0 auto;
         }
         
-        .content .cot {
+        .content .new,
+        .content .kind,
+        .content .hot {
             display: none;
         }
         
@@ -111,7 +113,7 @@
             padding: 15px 10px;
             width: 230px;
             height: 30px;
-            color: #cc1d06;
+            color: tomato;
         }
         
         .content .active_ul {
@@ -132,20 +134,46 @@
         }
         
         .igo {
-            width: 100px;
-            margin: 20px;
-            height: 150px;
+            width: 100%;
+            margin: 20px 30px;
+            /* height: 150px; */
         }
         
         .igo img {
-            width: 100px;
-            height: 100px;
+            width: 80px;
+            height: 80px;
+            transition: all 0.3s linear;
+        }
+        
+        .igo img:hover {
+            transform: scale(1.3);
+            transform: rotate(360deg);
         }
         
         .igo a {
             font-size: 12px;
             color: #BABABA;
             text-align: center;
+        }
+        
+        .xia1 {
+            width: 110px;
+            height: 110px;
+            text-align: center;
+            float: left;
+            margin: 5px 10px;
+            overflow: hidden;
+        }
+        
+        .top_center {
+            padding-top: 20px;
+            border-top: 1px dashed #8D8D8D;
+            padding-bottom: 20px;
+        }
+        
+        .top_center a {
+            color: #CFCFCF;
+            padding: 68px;
         }
         
         .xux {
@@ -165,10 +193,26 @@
         
         .jz {
             font-size: 18px;
-            width: 120px;
+            width: 140px;
             color: orangered;
             margin: 50px auto;
             cursor: pointer;
+        }
+        
+        .jz img {
+            width: 20px;
+        }
+        
+        .clearfix:after {
+            content: "";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+        
+        .clearfix {
+            *zoom: 1;
         }
     </style>
 </head>
@@ -184,7 +228,7 @@
                     <a href="#"> 酷玩</a>
                 </li>
                 <li><a href="#">导购</a></li>
-                <li><a href="#">使用</a></li>
+                <li><a href="#">试用</a></li>
                 <li><a href="#">报告</a></li>
             </ul>
             <div class="surch">
@@ -212,19 +256,180 @@
             <div class="kind cot">
                 <div class="life">
                     <h4>生活</h4>
-                    <div class="igo">
-                        <img src="../img/cat_1.png">
-                        <a href="#">空气净化器（21）</a>
+                    <div class="igo clearfix">
+                        <div class="xia1">
+                            <img src="../img/cat_1.png" class="xuan"><br>
+                            <a>空气净化器（21）</a>
+                        </div>
+                        <div class="xia1">
+                            <img src="../img/cat_2.png" class="xuan"><br>
+                            <a>原汁机（21）</a>
+                        </div>
+                        <div class="xia1">
+                            <img src="../img/cat_3.png" class="xuan"><br>
+                            <a>吸尘器（21））</a>
+                        </div>
+                        <div class="xia1">
+                            <img src="../img/cat_4.png" class="xuan"><br>
+                            <a> 扫地机器人（21））</a>
+                        </div>
+                        <div class="xia1">
+                            <img src="../img/cat_5.png" class="xuan"><br>
+                            <a>电风扇（21））</a>
+                        </div>
+                        <div class="xia1">
+                            <img src="../img/cat_6.png" class="xuan"><br>
+                            <a>净水壶（21）</a>
+                        </div>
+                        <div class="xia1">
+                            <img src="../img/cat_7.png" class="xuan"><br>
+                            <a> 电饭煲（21）</a>
+                        </div>
+                        <div class="xia1">
+                            <img src="../img/cat_8.png" class="xuan"><br>
+                            <a> 咖啡机（21）</a>
+                        </div>
+                    </div>
+                    <div class="top_center">
+                        <a> 电视（21） </a>
+                        <a> 空调（21）</a>
+                        <a> 洗衣机（21）</a>
+                        <a> 加湿器（21）</a>
+                        <a> 净水壶（21）</a>
+                        <a> 热水器（21）</a>
+                        <a> 咖啡机（21）</a>
+                        <a> 原汁机（21）</a>
+                        <a> 消毒/洗碗机（21）</a>
+                        <a> 豆浆机（21）</a>
+                        <a> 扫地机器人（21）</a>
+                        <a>除湿机（21）</a>
+                        <a> 干燥机（21）</a>
+                        <a> 咖啡机（21）</a>
+                        <a> 取暖器（21）</a>
+                        <a> 原汁机（21）</a>
+                    </div>
+                </div>
+                <div class="life">
+                    <h4>健康</h4>
+                    <div class="igo clearfix">
+                        <div class="xia1">
+                            <img src="../img/cat_9.png" class="xuan"><br>
+                            <a>电动牙刷（21）</a>
+                        </div>
+                        <div class="xia1">
+                            <img src="../img/cat_10.png" class="xuan"><br>
+                            <a> 剃须刀（ 21）</a>
+                        </div>
+                        <div class="xia1">
+                            <img src="../img/cat_11.png" class="xuan"><br>
+                            <a> 按摩器（21） </a>
+                        </div>
 
                     </div>
-                    <div class="xux">
+                    <div class="top_center">
+                        <a> 冲牙器（21） </a>
+                        <a> 洁面仪（21）</a>
+                        <a> 蒸面器（21）</a>
+                        <a> 加湿器（21）</a>
+                    </div>
+                </div>
+                <div class="life">
+                    <h4>生活</h4>
+                    <div class="igo clearfix">
+                        <div class="xia1">
+                            <img src="../img/cat_1.png" class="xuan"><br>
+                            <a>电动牙刷（21）</a>
+                        </div>
+                        <div class="xia1">
+                            <img src="../img/cat_2.png" class="xuan"><br>
+                            <a> 剃须刀（ 21）</a>
+                        </div>
+                        <div class="xia1">
+                            <img src="../img/cat_3.png" class="xuan"><br>
+                            <a> 按摩器（21） </a>
+                        </div>
 
+
+                    </div>
+                    <div class="top_center">
+                        <a> 电视（21） </a>
+                        <a> 空调（21）</a>
+                        <a> 洗衣机（21）</a>
+                        <a> 加湿器（21）</a>
+                        <a> 净水壶（21）</a>
+                        <a> 热水器（21）</a>
+                        <a> 咖啡机（21）</a>
+                        <a> 原汁机（21）</a>
+                        <a> 消毒/洗碗机（21）</a>
+                        <a> 豆浆机（21）</a>
+                        <a> 扫地机器人（21）</a>
+                        <a>除湿机（21）</a>
+                        <a> 干燥机（21）</a>
+                        <a> 咖啡机（21）</a>
+                        <a> 取暖器（21）</a>
+                        <a> 原汁机（21）</a>
+                    </div>
+                </div>
+                <div class="life">
+                    <h4>生活</h4>
+                    <div class="igo clearfix">
+                        <div class="xia1">
+                            <img src="../img/cat_1.png" class="xuan"><br>
+                            <a>空气净化器（21）</a>
+                        </div>
+                        <div class="xia1">
+                            <img src="../img/cat_2.png" class="xuan"><br>
+                            <a>原汁机（21）</a>
+                        </div>
+                        <div class="xia1">
+                            <img src="../img/cat_3.png" class="xuan"><br>
+                            <a>吸尘器（21））</a>
+                        </div>
+                        <div class="xia1">
+                            <img src="../img/cat_4.png" class="xuan"><br>
+                            <a> 扫地机器人（21））</a>
+                        </div>
+                        <div class="xia1">
+                            <img src="../img/cat_5.png" class="xuan"><br>
+                            <a>电风扇（21））</a>
+                        </div>
+                        <div class="xia1">
+                            <img src="../img/cat_6.png" class="xuan"><br>
+                            <a>净水壶（21）</a>
+                        </div>
+                        <div class="xia1">
+                            <img src="../img/cat_7.png" class="xuan"><br>
+                            <a> 电饭煲（21）</a>
+                        </div>
+                        <div class="xia1">
+                            <img src="../img/cat_8.png" class="xuan"><br>
+                            <a> 咖啡机（21）</a>
+                        </div>
+
+                    </div>
+                    <div class="top_center">
+                        <a> 电视（21） </a>
+                        <a> 空调（21）</a>
+                        <a> 洗衣机（21）</a>
+                        <a> 加湿器（21）</a>
+                        <a> 净水壶（21）</a>
+                        <a> 热水器（21）</a>
+                        <a> 咖啡机（21）</a>
+                        <a> 原汁机（21）</a>
+                        <a> 消毒/洗碗机（21）</a>
+                        <a> 豆浆机（21）</a>
+                        <a> 扫地机器人（21）</a>
+                        <a>除湿机（21）</a>
+                        <a> 干燥机（21）</a>
+                        <a> 咖啡机（21）</a>
+                        <a> 取暖器（21）</a>
+                        <a> 原汁机（21）</a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="jz">
-            点击加载更多
+            <img src="../img/more.png" alt=""> 点击加载更多
         </div>
     </div>
     <!-- 底部 -->
@@ -292,53 +497,14 @@
     // 点击对应版块高亮
     $(".title li").click(function(index) {
         var index = $(this).index();
-        $(this).prop('class', 'active').siblings('li').prop('class', '')
-        $(this).parents(".title").siblings('.content').children('.cot').eq(index).css('display', 'block').siblings('.cot')
-            .css('display', 'none')
+        $(this).prop('class', 'active').siblings().removeClass('active')
+        $(this).parents(".title").siblings('.content').children().eq(index).addClass('active_ul').siblings().removeClass('active_ul')
     });
     // 渲染内容
     var a = document.querySelector('.new')
     var hot = document.querySelector('.hot')
-    $.ajax({
-        url: "http://192.168.1.94:3000/play/new",
-        type: 'GET',
-        dataType: 'json',
-        success: function(data) {
-            console.log(data)
-            jz = function(f, m) {
-                for (var i = f; i < m; i++) {
-                    for (var n = 0; n < 8; n++) {
-                        a.innerHTML += '<li>' + '<img src =' + data[i][n].img + '>' + '<span class="reports_t">' + data[i][n].text + '</span>' + '<div class="r_s1">' +
-                            '<span>' + data[0][i].price + '</span>' +
-                            '<span class="reports_pl"><img src="../img/reply.png">' + data[i][n].like + '</span>' +
-                            '<span class="reports_pl"><img src="../img/use5.png">' + data[i][n].words + '</span>' +
-                            '</div>' + '</li>';
-                        hot.innerHTML += ('<li>' + '<img src =' + data[i][n].img + '>' + '<span class="reports_t">' + data[i][n].text + '</span>' + '<div class="r_s1">' +
-                            '<span>' + data[0][i].price + '</span>' +
-                            '<span class="reports_pl"><img src="../img/reply.png">' + data[i][n].like + '</span>' +
-                            '<span class="reports_pl"><img src="../img/use5.png">' + data[i][n].words + '</span>' +
-                            '</div>' + '</li>');
-                    }
-                }
-            }
-            jz(0, 2);
-            $('.jz').click(function() {
-                var one = 2;
-                var two = 3;
-                if (two < data.length) {
-                    console.log(one)
-                    console.log(two)
-                    jz(one, two);
-                    one++;
-                    two++;
-                } else if (two >= data.length) {
-                    console.log(123)
-                }
-            })
-        }
-    });
-
-    var xux = document.querySelector(".xux");
+    var xux = document.getElementsByClassName("xux");
+    var JZ = document.querySelector(".jz");
 
     $.ajax({
         url: "http://192.168.1.94:3000/play/category",
@@ -346,9 +512,52 @@
         dataType: 'json',
         success: function(data) {
             console.log(data)
-            for (var i = 0; i < data.live.length; i++) {
-                xux.innerHTML += '<a href="#">' + data.live[i].productName + '（' + data.live[i].nums + '）' + '</a>'
+            for (var p = 0; p < data.live.length; p++) {
+                xux.innerHTML += '<a href="#">' + data.live[p].productName + '（' + data.live[p].nums + '）' + '</a>'
             }
+        }
+    });
+    $.ajax({
+        url: "http://192.168.1.94:3000/play/new",
+        type: 'GET',
+        dataType: 'json',
+        success: function(data) {
+            jz = function(f, m) {
+                for (var i = 0; i < 2; i++) {
+                    for (var n = 0; n < 8; n++) {
+                        a.innerHTML += '<li>' + '<img src =' + data[i][n].img + '>' + '<span class="reports_t">' + data[i][n].text + '</span>' + '<div class="r_s1">' +
+                            '<span>' + data[0][i].price + '</span>' +
+                            '<span class="reports_pl"><img src="../img/reply.png">' + data[i][n].like + '</span>' +
+                            '<span class="reports_pl"><img src="../img/use5.png">' + data[i][n].words + '</span>' +
+                            '</div>' + '</li>';
+                        hot.innerHTML += ('<li>' + '<img src =' + data[i + 1][n].img + '>' + '<span class="reports_t">' + data[i][n].text + '</span>' + '<div class="r_s1">' +
+                            '<span>' + data[0][i].price + '</span>' +
+                            '<span class="reports_pl"><img src="../img/reply.png">' + data[i][n].like + '</span>' +
+                            '<span class="reports_pl"><img src="../img/use5.png">' + data[i][n].words + '</span>' +
+                            '</div>' + '</li>');
+                    }
+                }
+            };
+            jz();
+            $('.jz').click(function() {
+                JZ.innerHTML = '<img src="../img/loading-icon.gif" alt=""> 加载中请稍后'
+                setTimeout(function() {
+                    if ($('.content').children().hasClass('active_ul')) {
+                        if ($('.content').children('.active_ul').index() < 2) {
+                            for (var i = 0; i < 2; i++) {
+                                for (var n = 0; n < 4; n++) {
+                                    $('.active_ul').append(('<li>' + '<img src =' + data[i][n].img + '>' + '<span class="reports_t">' + data[i][n].text + '</span>' + '<div class="r_s1">' +
+                                        '<span>' + data[n][i].price + '</span>' +
+                                        '<span class="reports_pl"><img src="../img/reply.png">' + data[i][n].like + '</span>' +
+                                        '<span class="reports_pl"><img src="../img/use5.png">' + data[i][n].words + '</span>' +
+                                        '</div>' + '</li>'))
+                                }
+                            }
+                        }
+                    }
+                    JZ.innerHTML = '<img src="../img/more.png" alt=""> 点击加载更多'
+                }, 2000)
+            })
         }
     });
 </script>

@@ -1,3 +1,7 @@
+ul li {
+    display: inline-block;
+}
+
 .neir {
     width: 100%;
     border-top: 2px solid #d0d0d0;
@@ -78,7 +82,7 @@
 
 /* 大众使用 */
 
-.dzsy-neir {
+<<<<<<< HEAD .dzsy-neir {
     display: block;
     width: 100%;
     background-color: #f7f7f7;
@@ -88,9 +92,79 @@
     display: inline-block;
     width: 225px;
     height: 290px;
-    background: url(../img/hot3.jpg);
+    background: url(../images/hot3.jpg);
     background-size: 225px 130px;
     background-repeat: no-repeat;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    margin: 20px 34px;
+}
+
+.div {
+    display: inline-block;
+    padding: 2px 5px;
+    color: #fff;
+    background: #fd5643;
+    float: right;
+    font-size: 13px;
+    border-radius: 0 0 0 5px;
+}
+
+.span1 {
+    display: inline-block;
+    text-align: center;
+    margin-top: 106px;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.div1 {
+    display: inline-block;
+    color: #fa553f;
+    font-size: 13px;
+    border-radius: 5px;
+    padding: 3px;
+    margin-left: 69px;
+    border: 1px solid #fa553f;
+}
+
+.div2 {
+    display: inline-block;
+    color: #fa553f;
+    font-size: 13px;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 3px;
+    border: 1px solid #fa553f;
+}
+
+.div3 {
+    margin-top: 8px;
+    text-align: center;
+}
+
+.div3 span {
+    color: red;
+}
+
+.div4 {
+    text-align: center;
+    color: #fa553f;
+}
+
+=======.dzsy-neir {
+    display: block;
+    width: 100%;
+    background-color: #f7f7f7;
+}
+
+.neir-span {
+    display: inline-block;
+    width: 225px;
+    height: 290px;
+    background-size: 225px 130px !important;
+    background-repeat: no-repeat !important;
     border-radius: 8px;
     overflow: hidden;
     border: 1px solid #ccc;
@@ -149,7 +223,7 @@
     color: #ccc;
 }
 
-
+>>>>>>>88af5a55d8856f3552545fc2dbbbe2117c0446f8
 /* 申请中 */
 
 .neir-sqz {
@@ -162,7 +236,7 @@
     display: inline-block;
     width: 225px;
     height: 290px;
-    background: url(../img/hot3.jpg);
+    background: url(../images/hot3.jpg);
     background-size: 225px 130px;
     background-repeat: no-repeat;
     border-radius: 8px;
@@ -184,7 +258,7 @@
     display: inline-block;
     width: 225px;
     height: 290px;
-    background: url(../img/hot4.jpg);
+    background: url(../images/hot4.jpg);
     background-size: 225px 130px;
     background-repeat: no-repeat;
     border-radius: 8px;
@@ -206,7 +280,7 @@
     display: inline-block;
     width: 225px;
     height: 290px;
-    background: url(../img/hot5.jpg);
+    background: url(../images/hot5.jpg);
     background-size: 225px 130px;
     background-repeat: no-repeat;
     border-radius: 8px;
@@ -236,7 +310,7 @@
     display: inline-block;
     width: 225px;
     height: 290px;
-    background: url(../img/hot1.jpg);
+    background: url(../images/hot1.jpg);
     background-size: 225px 130px;
     background-repeat: no-repeat;
     border-radius: 8px;
@@ -268,7 +342,7 @@
     display: inline-block;
     width: 225px;
     height: 290px;
-    background: url(../img/hot2.jpg);
+    background: url(../images/hot2.jpg);
     background-size: 225px 130px;
     background-repeat: no-repeat;
     border-radius: 8px;
@@ -290,7 +364,7 @@
     display: inline-block;
     width: 225px;
     height: 290px;
-    background: url(../img/hot3.jpg);
+    background: url(../images/hot3.jpg);
     background-size: 225px 130px;
     background-repeat: no-repeat;
     border-radius: 8px;
@@ -312,7 +386,7 @@
     display: inline-block;
     width: 225px;
     height: 290px;
-    background: url(../img/hot4.jpg);
+    background: url(../images/hot4.jpg);
     background-size: 225px 130px;
     background-repeat: no-repeat;
     border-radius: 8px;
