@@ -32,4 +32,28 @@ hotNext.addEventListener('click', function() {
 })
 hotPrev.addEventListener('click', function() {
     mySwiper.slidePrev()
+});
+//登录
+var btn = document.querySelector(".Dl");
+var shadow = document.querySelector(".shadow");
+var imgBox = document.querySelector("#big");
+// var close = document.querySelector(".close");
+// var imgs = document.querySelectorAll("img");
+// 弹遮罩
+btn.onclick = function() {
+    shadow.style.display = "block";
+    imgBox.style.display = "block";
+};
+
+// 关遮罩
+close.onclick = closeShadow;
+shadow.onclick = closeShadow;
+
+function closeShadow() {
+    shadow.style.display = "none";
+    imgBox.style.display = "none";
+};
+$('.x').click(function() {
+    shadow.style.display = "none";
+    imgBox.style.display = "none";
 })
