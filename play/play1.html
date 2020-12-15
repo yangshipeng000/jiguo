@@ -542,6 +542,7 @@
             };
             jz();
             $('.jz').click(function() {
+                console.log(1)
                 JZ.innerHTML = '<img src="../img/loading-icon.gif" alt=""> 加载中请稍后'
                 setTimeout(function() {
                     if ($('.content').children().hasClass('active_ul')) {
