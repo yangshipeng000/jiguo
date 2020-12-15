@@ -7,6 +7,31 @@
     <link rel="stylesheet" type="text/css" href="./css/swiper-bundle.css" />
     <link rel="stylesheet" type="text/css" href="./css/public.css" />
     <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <style>
+        ul,
+        li {
+            list-style: none;
+            display: inline-block
+        }
+        
+        .top {
+            position: fixed;
+            bottom: 100px;
+            right: 100px;
+            width: 60px;
+            height: 60px;
+            background-color: lightgray;
+            opacity: 0.5;
+            border-radius: 10px;
+            display: none
+        }
+        
+        .top img {
+            margin: 20px 10px 10px 10px;
+            /* width: 60px;
+            height: 40px; */
+        }
+    </style>
 </head>
 
 <body>
@@ -87,6 +112,7 @@
             </div>
         </div>
     </div>
+
     <!-- 热门试用 -->
     <div class="hot_box">
         <div class="hot_car">
@@ -319,7 +345,10 @@
             </ul>
         </div>
     </div>
-
+    <!-- 返回顶部 -->
+    <div class="top">
+        <img src="./img/back.png" alt="">
+    </div>
     <!-- 发现酷玩 -->
     <div class="coldplay">
         <h4>发现酷玩</h4>
@@ -392,6 +421,23 @@
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="./js/swiper-bundle.js"></script>
 <script src="./js/index.js"></script>
+<script>
+    // 返回顶部
+    var top = document.querySelector(".top");
+    $(document).scroll(function() {
+        console.log($(document).scrollTop());
+        if ($(this).scrollTop() > 200) {
+            $(".top").fadeIn();
+        } else {
+            $(".top").fadeOut();
+        }
+    })
+    $(".top").click(function() {
+        $("html,body").stop().animate({
+            scrollTop: 0
+        }, 500);
+    })
+</script>
 <script>
     var a = document.querySelector('.reports_select ul')
     var guide = document.querySelector(".guide ul");
