@@ -15,12 +15,14 @@ body {
 header ul,
 footer li {
     display: inline-block;
-    list-style: none;
 }
 
 footer ul,
 footer li {
     display: inline-block;
+}
+
+ul li {
     list-style: none;
 }
 
