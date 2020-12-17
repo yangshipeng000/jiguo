@@ -105,7 +105,7 @@
                     <li>
                         <a id="timeOut"></a>
                     </li>
-                    <li><a href="#" class="ljsq">立即申请</a></li>
+                    <li><a href="./use/use1.html" target="_blank" class="ljsq">立即申请</a></li>
                 </ul>
             </div>
         </div>
@@ -325,12 +325,14 @@
                     </div>
                     <img class="bottomImg" src="./img/listbg.jpg" alt=""></li>
                 <li>
-                    <img src='./img/g3.jpg '><span class="reports_t">2016，这8支钢笔够你装逼一整年</span>
-                    <div class="r_s1">
-                        <span class="reports_pl"><img src="./img/reply.png">3</span>
-                        <span class="reports_pl"><img src="./img/use5.png">3</span>
-                    </div>
-                    <img class="bottomImg" src="./img/listbg.jpg" alt="">
+                    <a href="./guide/guide3.html" target="_blank">
+                        <img src='./img/g3.jpg '><span class="reports_t">2016，这8支钢笔够你装逼一整年</span>
+                        <div class="r_s1">
+                            <span class="reports_pl"><img src="./img/reply.png">3</span>
+                            <span class="reports_pl"><img src="./img/use5.png">3</span>
+                        </div>
+                        <img class="bottomImg" src="./img/listbg.jpg" alt="">
+                    </a>
                 </li>
                 <li>
                     <img src='./img/g4.jpg '><span class="reports_t">他用12年找一把完美 剃须刀，给你2万字终极购买指南</span>
@@ -442,7 +444,7 @@
     var coldplay = document.querySelector(".coldplay ul");
     var JZ = document.querySelector(".jz");
     $.ajax({
-        url: "http://192.168.1.94:3000/play/new",
+        url: "http://192.168.1.24:3000/play/new",
         type: 'GET',
         dataType: 'json',
         success: function(data) {
@@ -479,7 +481,7 @@
         JZ.innerHTML = '<img src="./img/loading-icon.gif" alt=""> 加载中请稍后'
         setTimeout(function() {
             $.ajax({
-                url: "http://192.168.1.94:3000/play/new",
+                url: "http://192.168.1.24:3000/play/new",
                 type: 'GET',
                 dataType: 'json',
                 success: function(data) {
