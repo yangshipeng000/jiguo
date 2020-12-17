@@ -224,9 +224,17 @@ ul li {
 
 /* 报告精选 */
 
+.chakanmore {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    color: red;
+}
+
 .reports_select,
 .guide,
 .coldplay {
+    position: relative;
     width: 1200px;
     font-size: 15px;
     margin: 0 auto;
