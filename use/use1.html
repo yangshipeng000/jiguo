@@ -33,7 +33,7 @@
     <div class="neir">
         <div class="neir-box">
             <div class="neir-box-yemei">
-                <h1>免费试用</h1>
+                <span>免费试用</span>
                 <ul class="ul1">
                     <li class="active">大众试用</li>
                     <li>体验师专享</li>
@@ -284,7 +284,7 @@
         dataType: 'json',
         success: function(data) {
             console.log(data)
-            for (var i = 0; i < data.length; i++) {
+            for (var i = 0; i < data.length - 1; i++) {
                 dzsyneir.innerHTML += '<span class="neir-span" style="background:url(' + data[i].img + ')">' +
                     '<div class="div">' + data[i].info_ty + '</div>' + '<span class="span1">' + data[i].text + '</span>' +
                     '<div class="div1">' + data[i].totalnum + '</div>' + '<div class="div2">' + data[i].num + '台</div>' +
