@@ -33,7 +33,7 @@ ul li {
     color: #b3ad9f;
 }
 
-.active {
+.ul1 li.active {
     border-bottom: 3px solid #fd5238;
     color: #fc532c;
 }

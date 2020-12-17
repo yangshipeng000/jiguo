@@ -71,6 +71,10 @@ header {
     color: orangered;
 }
 
+.icon li a.active {
+    color: orangered;
+}
+
 .icon .surch {
     display: inline-block;
     float: right;
